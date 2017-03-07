@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+<div align="center">
+	<h1>QUIZ BUILDER LOGIN</h1>
+	<br><br><br>
+	<p>USER_NAME:-</p>
+	<input type="text" placeholder="username" id="input1">
+	<br><br>
+	<p>PASSWORD:-</p>
+	<input type="password" placeholder="password" id="input2">
+	<br><br>
+	<button id="button1">submit</button>
+</div>
+</body>
+<script type="text/javascript">
+	document.getElementById("button1").addEventListener("click",check);
+	function check() {
+		var a=document.getElementById("input1").value;
+		var b=document.getElementById("input2").value;
+		if(a=="sagar"&&b=="sagar"){
+			window.location="quiz_page1.html";
+		}else{
+			alert("worng combination");
+		}
+	}
+</script>
+</html>

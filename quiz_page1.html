@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+<button id="logout">logout</button>
+<div align="center">
+	<h3>SELECT YOUR CHOICE</h3><br><br>
+	<button id="one">Basic Mathematics Quiz</button><br><br>
+	<button id="two">General Knowledge Quiz</button>
+</div>
+<script type="text/javascript">
+	document.getElementById("one").addEventListener("click",check1);
+	document.getElementById("logout").addEventListener("click",logout);
+	document.getElementById("two").addEventListener("click",check2);
+	function check1() {
+		window.location="maths.html";
+	}
+	function check2() {
+		window.location="gk.html";
+	}
+		function logout() {
+		window.location="login.html";
+	}
+</script>
+</body>
+</html>
